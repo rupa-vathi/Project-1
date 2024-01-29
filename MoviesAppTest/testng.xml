@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MovieAppTest" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="MovieAppReport" />
+    </listeners>
+    <test name="MovieAppTest">
+        <classes>
+            <class name="LoginPageTest" />
+            <class name="HeaderSection" />
+            <class name="HomePageTest"/>
+            <class name="movieDetails"/>
+            <class name="PopularPage"/>
+            <class name="AccountPage"/>
+            <class name="searchPage"/>
+        </classes>
+    </test>
+</suite>
